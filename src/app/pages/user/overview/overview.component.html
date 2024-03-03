@@ -1,0 +1,2 @@
+<app-action-menu />
+<app-table [items]="users$ | async" [keys]="userKeys" [headers]="userHeaders" (onSelect)="goToDetail($event)" />

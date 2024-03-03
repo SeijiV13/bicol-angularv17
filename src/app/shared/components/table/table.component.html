@@ -1,0 +1,24 @@
+<div class="overflow-x-auto">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th></th>
+        @for(header of headers; track header) {
+        <th>{{header}}</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      <!-- row 1 -->
+      @for(item of items; track item.id; let index = $index) {
+      <tr (click)="onSelect.emit(item.id)">
+        <th>{{index + 1}}</th>
+        @for(key of keys; track key) {
+        <td>{{item[key]}}</td>
+        }
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

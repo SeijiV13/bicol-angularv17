@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Seiji Villafranca",
+      "job": "Software Engineer",
+      "company": "KPN"
+    },
+    {
+      "id": "2",
+      "name": "John Doe",
+      "job": "Quality Engineer",
+      "company": "KodeAcross"
+    }
+  ]
+}
